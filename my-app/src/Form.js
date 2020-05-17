@@ -23,6 +23,7 @@ export default function Form() {
       password: "",
       role: "",
       terms: false
+
       
     });
 
