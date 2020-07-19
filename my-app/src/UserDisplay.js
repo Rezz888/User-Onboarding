@@ -1,7 +1,6 @@
 import React from "react";
 
-const UserDisplay = props => {
-    const { user } = props;
+const UserDisplay = ({user}) => {
 
     return(
         <div className="users">

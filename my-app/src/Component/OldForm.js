@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import * as yup from 'yup';
 import axios from "axios";
-import UserDisplay from "./UserDisplay";
+import UserDisplay from "../UserDisplay";
 
 const formSchema = yup.object().shape({
     name: yup.string().required("Required field"),
@@ -37,10 +37,6 @@ export default function Form() {
         setButtonDisabled(!valid);
       });
     }, [formState]);
-
-    // useEffect(() => {
-
-    // }, [user]);
     
 
     const [errorState, setErrorState] = useState({
@@ -129,7 +125,7 @@ export default function Form() {
          <label htmlFor="password">
             Password
             <input 
-            type="text" 
+            type="password"
             name="password"
             id="password"
             value={formState.password}

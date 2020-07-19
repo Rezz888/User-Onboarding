@@ -55,6 +55,14 @@ button:hover {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
 
+button:disabled {
+  background-image: none;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+
 form {
   display: flex;
   flex-direction: column;
